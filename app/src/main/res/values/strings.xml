@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">android_dp58_nguyenvuphuong</string>
+    <string name="InfoFragment">Info Fragment</string>
+    <string name="Name">Name: Nguyen Vu Phuong</string>
+    <string name="Student">Student ID: ADR58_D2</string>
+    <string name="Class">Class: Android Basic</string>
+    <string name="Email">Email: vphuong4725@gmail.com\"</string>
+    <string name="ActionFragment">Action Fragment</string>
+    <string name="Call">Call</string>
+    <string name="email">Email</string>
+    <string name="MainActivity">Main Activity</string>
+    <string name="Profile">Profile</string>
+    <string name="Back">Back</string>
+    <string name="Info">Info</string>
+    <string name="Action">Action</string>
 </resources>
