@@ -11,18 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_dp58_nguyenvuphuong">
+
+        <!-- Pinterest Activity -->
         <activity
-            android:name=".day02_simple_profile_app.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".day02_simple_profile_app.MainDay2Activity"
+            android:name=".day05_pinterest_ui_demo.MainDay5Activity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <!-- Day 2 -->
+        <activity
+            android:name=".day02_simple_profile_app.ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".day02_simple_profile_app.MainDay2Activity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
