@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#181D1F"
-    tools:context=".day03.MainDay3Activity">
+    tools:context=".day03_facebook_screen_ui.MainDay3Activity">
 
     <ScrollView
         android:id="@+id/scrollContent"

@@ -43,4 +43,19 @@
     <string name="tabGame">⊙ Games</string>
     <string name="noty">♢ Notifications</string>
     <string name="tabProfile">● Profile</string>
+    <string name="detail">Detail</string>
+    <string name="wifi">Free Wifi</string>
+    <string name="free_breakfast">Free Breakfast</string>
+    <string name="star">5.0</string>
+    <string name="decription">Decription</string>
+    <string name="full_description">Aston Hotel, Alice Springs NT 0870, Australia is a modern hotel, elegant 5 star hotel overlooking the sea, perfect for a romantic, charming and relaxing vacation with family and friends. The hotel offers luxury rooms, free high speed wifi, delicious breakfast, beautiful sea views and excellent customer service. Guests can enjoy the peaceful atmosphere, outdoor swimming pool and many exciting activities nearby. <font color='#5B4DFC'><b>Collapse</b></font>
+    </string>
+    <string name="read_more">Read More. . .</string>
+    <string name="preview">Preview</string>
+    <string name="booking_now">Booking Now</string>
+    <string name="home_name">The Aston Vill Hotel</string>
+    <string name="location">Alice Springs NT 0870, Australia</string>
+    <string name="price_month">$200.7</string>full_description
+    <string name="decription_detail">Aston Hotel, Alice Springs NT 0870, Australia is a modern hotel. elegant 5 star hotel overlooking the sea. perfect for a romantic, charming <font color='#5B4DFC'><b>Read More...</b></font>
+    </string>
 </resources>

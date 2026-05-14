@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day03;
+package com.devpro.android_dp58_nguyenvuphuong.day03_facebook_screen_ui;
 
 import android.os.Bundle;
 
