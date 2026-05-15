@@ -4,15 +4,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".day05_pinterest_ui_demo.MainDay5Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
 
@@ -20,8 +20,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/img_logo_pinterest"
@@ -35,10 +35,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:text="@string/logo_pinterest"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/color_pinterest" />
-
+                android:textColor="@color/color_pinterest"
+                android:textSize="26sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <ImageView
@@ -50,8 +49,8 @@
 
         <ImageView
             android:id="@+id/iv_btn_search"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_marginStart="12dp"
             android:padding="4dp"
             android:src="@drawable/btn_search_d5" />
@@ -67,8 +66,8 @@
             android:id="@+id/layout_tabs"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:paddingStart="16dp"
             android:paddingEnd="16dp">
 
@@ -76,78 +75,78 @@
                 android:id="@+id/tab_for_you"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
+                android:background="@drawable/bg_tab_selected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="For You"
-                android:textStyle="bold"
+                android:text="@string/ForYou"
                 android:textColor="@color/white"
-                android:background="@drawable/bg_tab_selected_d5" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tab_popular"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:background="@drawable/bg_tab_unselected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="Popular"
-                android:textStyle="bold"
+                android:text="@string/Popular"
                 android:textColor="@color/black"
-                android:background="@drawable/bg_tab_unselected_d5" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tab_design"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:background="@drawable/bg_tab_unselected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="Design"
-                android:textStyle="bold"
+                android:text="@string/Design"
                 android:textColor="@color/black"
-                android:background="@drawable/bg_tab_unselected_d5" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tab_technology"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:background="@drawable/bg_tab_unselected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="Technology"
-                android:textStyle="bold"
+                android:text="@string/Technology"
                 android:textColor="@color/black"
-                android:background="@drawable/bg_tab_unselected_d5" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tab_food"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:background="@drawable/bg_tab_unselected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="Food"
-                android:textStyle="bold"
+                android:text="@string/Food"
                 android:textColor="@color/black"
-                android:background="@drawable/bg_tab_unselected_d5" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tab_travel"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:background="@drawable/bg_tab_unselected_d5"
                 android:gravity="center"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:text="Travel"
-                android:textStyle="bold"
+                android:text="@string/Travel"
                 android:textColor="@color/black"
-                android:background="@drawable/bg_tab_unselected_d5" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -158,17 +157,17 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:clipToPadding="false"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:clipToPadding="false"/>
+        android:paddingEnd="12dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:background="@color/white"
-        android:elevation="8dp">
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/img_btn_home"

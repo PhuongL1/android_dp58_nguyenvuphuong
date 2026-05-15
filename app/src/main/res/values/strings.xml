@@ -59,4 +59,10 @@
     <string name="decription_detail">Aston Hotel, Alice Springs NT 0870, Australia is a modern hotel. elegant 5 star hotel overlooking the sea. perfect for a romantic, charming <font color='#5B4DFC'><b>Read More...</b></font>
     </string>
     <string name="logo_pinterest">Pinterest</string>
+    <string name="ForYou">For You</string>
+    <string name="Popular">Popular</string>
+    <string name="Design">Design</string>
+    <string name="Technology">Technology</string>
+    <string name="Food">Food</string>
+    <string name="Travel">Travel</string>
 </resources>

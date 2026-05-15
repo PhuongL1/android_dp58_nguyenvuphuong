@@ -57,6 +57,17 @@ public class MainDay5Activity extends AppCompatActivity {
         list.add(new PinItem(R.drawable.pd9_d5, 320));
         list.add(new PinItem(R.drawable.pd10_d5, 190));
         list.add(new PinItem(R.drawable.pd11_d5, 280));
+        list.add(new PinItem(R.drawable.pd1_d5, 260));
+        list.add(new PinItem(R.drawable.pd2_d5, 280));
+        list.add(new PinItem(R.drawable.pd3_d5, 300));
+        list.add(new PinItem(R.drawable.pd4_d5, 220));
+        list.add(new PinItem(R.drawable.pd5_d5, 340));
+        list.add(new PinItem(R.drawable.pd6_d5, 200));
+        list.add(new PinItem(R.drawable.pd7_d5, 280));
+        list.add(new PinItem(R.drawable.pd8_d5, 240));
+        list.add(new PinItem(R.drawable.pd9_d5, 320));
+        list.add(new PinItem(R.drawable.pd10_d5, 190));
+        list.add(new PinItem(R.drawable.pd11_d5, 280));
         return list;
     }
 }
