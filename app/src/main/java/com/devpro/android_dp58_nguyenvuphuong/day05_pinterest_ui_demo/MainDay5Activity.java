@@ -70,4 +70,6 @@ public class MainDay5Activity extends AppCompatActivity {
         list.add(new PinItem(R.drawable.pd11_d5, 280));
         return list;
     }
+
+
 }
