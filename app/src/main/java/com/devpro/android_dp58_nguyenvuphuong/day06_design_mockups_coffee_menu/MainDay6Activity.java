@@ -23,7 +23,6 @@ import java.util.ArrayList;
 public class MainDay6Activity extends AppCompatActivity {
 
     private RecyclerView rcPinterestReel;
-    private ImageView ivBtnCart;
     private TextView tvCartBadge;
 
     private ArrayList<CoffeeItem> listCoffee;
@@ -45,12 +44,12 @@ public class MainDay6Activity extends AppCompatActivity {
         cartManager = new CartManager(this);
 
         rcPinterestReel = findViewById(R.id.rc_pinterest_reel);
-        ivBtnCart = findViewById(R.id.iv_btn_cart);
+        ImageView ivBtnCart = findViewById(R.id.iv_btn_cart);
         tvCartBadge = findViewById(R.id.tv_cart_badge);
 
         initData();
 
-        coffeeAdapter = new CoffeeAdapter(listCoffee, cartManager, () -> updateCartBadge());
+        coffeeAdapter = new CoffeeAdapter(listCoffee, cartManager, this::updateCartBadge);
 
         rcPinterestReel.setLayoutManager(new GridLayoutManager(this, 2));
         rcPinterestReel.setAdapter(coffeeAdapter);
@@ -137,7 +136,7 @@ public class MainDay6Activity extends AppCompatActivity {
 
         initData();
 
-        coffeeAdapter = new CoffeeAdapter(listCoffee, cartManager, () -> updateCartBadge());
+        coffeeAdapter = new CoffeeAdapter(listCoffee, cartManager, this::updateCartBadge);
         rcPinterestReel.setAdapter(coffeeAdapter);
 
         updateCartBadge();

@@ -11,21 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_dp58_nguyenvuphuong">
-        <activity android:name=".day06_design_mockups_coffee_menu.CartDay6Activity" />
+
         <activity
-            android:name=".day06_design_mockups_coffee_menu.MainDay6Activity"
+            android:name=".day07_app_order_food.MainDay7Activity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".day06_design_mockups_coffee_menu.CartDay6Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".day06_design_mockups_coffee_menu.MainDay6Activity"
+            android:exported="false" />
+
         <activity
             android:name=".day02_simple_profile_app.ProfileActivity"
             android:exported="false" />
+
         <activity
             android:name=".day02_simple_profile_app.MainDay2Activity"
             android:exported="false" />
+
     </application>
 
 </manifest>

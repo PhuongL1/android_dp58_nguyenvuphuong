@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_item_food_day7"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_ingredient"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_image_food_day7"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_salmon_d7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_ingredient_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/img_ingredient"
+        app:layout_constraintEnd_toStartOf="@id/layout_nutrition"
+        app:layout_constraintTop_toTopOf="@id/img_ingredient"
+        app:layout_constraintBottom_toBottomOf="@id/img_ingredient">
+
+        <TextView
+            android:id="@+id/tv_ingredient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/foodName"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tv_ingredient_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textColor="#777777"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_ingredient"
+        app:layout_constraintBottom_toBottomOf="@id/img_ingredient">
+
+        <TextView
+            android:id="@+id/tv_nutrition_1"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/nutrition"
+            android:textColor="#4E5C16"
+            android:textSize="12sp"
+            android:background="@drawable/bg_nutrition_green_day7" />
+
+        <TextView
+            android:id="@+id/tv_nutrition_2"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/nutrition_2"
+            android:textColor="#8A5B19"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_nutrition_yellow_day7" />
+
+        <TextView
+            android:id="@+id/tv_nutrition_3"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/nutrition_3"
+            android:textColor="#27706A"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_nutrition_blue_day7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,13 +23,10 @@ import java.util.ArrayList;
 public class CartDay6Activity extends AppCompatActivity {
 
     private RecyclerView rcCartDay6;
-    private ImageView ivBackCart;
     private TextView tvCartItemCount, tvSubTotal, tvTotal;
     private LinearLayout layoutEmptyCart;
 
     private ArrayList<CoffeeItem> listCart;
-    private CartAdapter cartAdapter;
-    private CartManager cartManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +40,10 @@ public class CartDay6Activity extends AppCompatActivity {
             return insets;
         });
 
-        cartManager = new CartManager(this);
+        CartManager cartManager = new CartManager(this);
 
         rcCartDay6 = findViewById(R.id.rc_cart_day6);
-        ivBackCart = findViewById(R.id.iv_back_cart);
+        ImageView ivBackCart = findViewById(R.id.iv_back_cart);
         tvCartItemCount = findViewById(R.id.tv_cart_item_count);
         tvSubTotal = findViewById(R.id.tv_sub_total);
         tvTotal = findViewById(R.id.tv_total);
@@ -56,7 +53,7 @@ public class CartDay6Activity extends AppCompatActivity {
 
         listCart = cartManager.getCartList();
 
-        cartAdapter = new CartAdapter(listCart, cartManager, () -> updateCartUI());
+        CartAdapter cartAdapter = new CartAdapter(listCart, cartManager, this::updateCartUI);
 
         rcCartDay6.setLayoutManager(new LinearLayoutManager(this));
         rcCartDay6.setAdapter(cartAdapter);

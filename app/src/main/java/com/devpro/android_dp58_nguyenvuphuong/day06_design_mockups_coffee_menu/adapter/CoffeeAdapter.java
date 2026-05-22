@@ -20,7 +20,6 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.CoffeeView
     public interface OnCoffeeChangeListener {
         void onCoffeeChanged();
     }
-
     private List<CoffeeItem> listCoffee;
     private CartManager cartManager;
     private OnCoffeeChangeListener listener;

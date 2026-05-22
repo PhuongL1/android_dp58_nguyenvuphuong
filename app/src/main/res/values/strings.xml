@@ -120,4 +120,26 @@
     <string name="cart">Cart</string>
     <string name="empty_cart">No item in your cart</string>
     <string name="rating">⭐ 4.5</string>
+    <string name="detail_name_food">Gourmet dessert</string>
+    <string name="detail_description_food">Elegant layered mousse cake with fresh fruit toppings, including blueberries.</string>
+    <string name="detail_time">Cooking time</string>
+    <string name="detail_time_m">30 mins</string>
+    <string name="detail_difficulty">Difficulty</string>
+    <string name="detail_difficulty_m">Medium</string>
+    <string name="detail_serving">Servings</string>
+    <string name="detail_serving_m">4 people</string>
+    <string name="detail_ingredients">Ingredients (5)</string>
+    <string name="detail_rate_recipe">Rate Recipe</string>
+    <string name="MainTitleFood">All recipes</string>
+    <string name="MainHintSearch">Search here</string>
+    <string name="tabBreakfast">Breakfast</string>
+    <string name="tabLunch">Lunch</string>
+    <string name="tabDinner">Dinner</string>
+    <string name="tabSnack">Snack</string>
+    <string name="foodName">Gourmet dessert</string>
+    <string name="foodInfo">30 mins  •  ⭐ 4.3</string>
+    <string name="amount">300 gr</string>
+    <string name="nutrition">Protein</string>
+    <string name="nutrition_2">Fat</string>
+    <string name="nutrition_3">Carb</string>
 </resources>

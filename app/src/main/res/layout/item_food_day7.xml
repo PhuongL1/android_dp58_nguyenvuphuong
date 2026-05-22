@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_item_food_day7"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:id="@+id/frame_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_image_food_day7"
+            android:clipToOutline="true" />
+
+        <ImageView
+            android:id="@+id/img_favorite"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:padding="4dp"
+            android:src="@drawable/red_heart"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_food_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/foodName"
+        android:textColor="#222222"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/frame_image"
+        app:layout_constraintEnd_toStartOf="@id/tv_arrow"
+        app:layout_constraintTop_toTopOf="@id/frame_image"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/tv_food_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/foodInfo"
+        android:textColor="#777777"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tv_food_name"
+        app:layout_constraintEnd_toEndOf="@id/tv_food_name"
+        app:layout_constraintBottom_toBottomOf="@id/frame_image" />
+
+    <ImageView
+        android:id="@+id/tv_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:src="@drawable/btn_attent_d7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

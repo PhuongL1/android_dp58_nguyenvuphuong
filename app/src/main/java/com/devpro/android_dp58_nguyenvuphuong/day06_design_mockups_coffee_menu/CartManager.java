@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 public class CartManager {
 
-    private SharedPreferences sharedPreferences;
-    private Gson gson;
+    private final SharedPreferences sharedPreferences;
+    private final Gson gson;
 
     public CartManager(Context context) {
         sharedPreferences = context.getSharedPreferences(Constants.PREF_NAME, Context.MODE_PRIVATE);
