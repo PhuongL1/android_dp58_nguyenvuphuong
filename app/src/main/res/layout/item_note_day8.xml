@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:id="@+id/layout_note_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_note_icon_d8">
+
+            <ImageView
+                android:id="@+id/img_note_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_file_d8" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/layout_note_icon"
+            android:layout_toStartOf="@id/img_note_more"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/note_title"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_note_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_note_title"
+            android:layout_toEndOf="@id/layout_note_icon"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/note_duration"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_note_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@id/tv_note_info"
+            android:layout_toEndOf="@id/layout_note_icon"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/not_tag"
+            android:textColor="#4169E1"
+            android:textSize="9sp"
+            android:background="@drawable/bg_tag_normal_d8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_note_new"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/note_new"
+            android:textColor="#4169E1"
+            android:textSize="9sp"
+            android:background="@drawable/bg_create_tag_d8"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_note_more"
+            android:layout_width="30dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/icon_more_d8" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

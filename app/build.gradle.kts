@@ -53,4 +53,11 @@ dependencies {
     implementation("com.intuit.ssp:ssp-android:1.1.1") // don vi chinh kich thuoc chu
     implementation("com.github.bumptech.glide:glide:5.0.5") // load anh ve nhanh
     implementation("com.google.code.gson:gson:2.14.0") //Thêm thư viện Gson
+
+    implementation ("androidx.room:room-runtime:2.6.1")
+    annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.7.0")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("androidx.cardview:cardview:1.0.0")
 }

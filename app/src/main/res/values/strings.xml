@@ -142,4 +142,16 @@
     <string name="nutrition">Protein</string>
     <string name="nutrition_2">Fat</string>
     <string name="nutrition_3">Carb</string>
+    <string name="search_note">Search ...</string>
+    <string name="my_notes">My notes</string>
+    <string name="get_pro">Get Pro</string>
+    <string name="create_tag">+ Create tag</string>
+    <string name="add_note">+ Add Note</string>
+    <string name="edit_note">Note detail</string>
+    <string name="note_title">Note title</string>
+    <string name="note_date">30 jun, 2026  •  00:04:59</string>
+    <string name="note_content">Write your note here...</string>
+    <string name="note_duration">Duration, example: 00:04:59</string>
+    <string name="not_tag">Work</string>
+    <string name="note_new">NEW</string>
 </resources>

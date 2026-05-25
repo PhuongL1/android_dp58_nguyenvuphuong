@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:id="@+id/layout_header_day8"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp">
+
+        <TextView
+            android:id="@+id/tv_title_my_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_notes"
+            android:textColor="#111111"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/tv_get_pro"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_get_pro_d8">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_crowrn_d8"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/get_pro"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_setting"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/btn_setting_d8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_search_day8"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/layout_header_day8"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_search_note"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_box_d8"
+            android:hint="@string/search_note"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_search_small_d7"
+            android:drawablePadding="8dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:textColorHint="#8F8F8F"
+            android:inputType="text"
+            android:imeOptions="actionSearch" />
+
+        <ImageButton
+            android:id="@+id/btn_filter_note"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_search_box_d8"
+            android:padding="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_filter_d8" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tags_day8"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/layout_search_day8"
+        android:layout_marginTop="7dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_tags_day8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:id="@+id/tv_create_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/create_tag"
+                android:textColor="#4169E1"
+                android:textSize="11sp"
+                android:background="@drawable/bg_create_tag_d8" />
+
+            <LinearLayout
+                android:id="@+id/layout_tag_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/scroll_tags_day8"
+        android:layout_above="@id/btn_add_note"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_note"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add_note"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="8dp"
+        android:backgroundTint="#4169E1" />
+
+</RelativeLayout>

@@ -13,15 +13,23 @@
         android:theme="@style/Theme.Android_dp58_nguyenvuphuong">
 
         <activity
-            android:name=".day07_app_order_food.MainDay7Activity"
+            android:name=".day08_app_take_note.MainDay8Activity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
+        <activity
+            android:name=".day08_app_take_note.NoteEditorActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".day07_app_order_food.MainDay7Activity"
+            android:exported="false" />
 
         <activity
             android:name=".day06_design_mockups_coffee_menu.CartDay6Activity"
