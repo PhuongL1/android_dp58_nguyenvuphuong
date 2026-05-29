@@ -154,4 +154,10 @@
     <string name="note_duration">Duration, example: 00:04:59</string>
     <string name="not_tag">Work</string>
     <string name="note_new">NEW</string>
+    <string name="list_products">Danh sách sản phẩm</string>
+    <string name="product_name">Product name</string>
+    <string name="product_price">19.99 USD</string>
+    <string name="name_avata">John Doe</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
 </resources>

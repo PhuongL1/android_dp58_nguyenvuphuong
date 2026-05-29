@@ -40,6 +40,8 @@ public class ApiClient { //ban than la 1 interface
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build())
                     .build();
+
+            tokenRepository.setApiService(retrofit.create(ApiService.class));
         }
         return retrofit;
     }

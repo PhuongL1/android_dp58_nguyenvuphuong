@@ -29,7 +29,7 @@
         android:id="@+id/tvName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="John Doe" />
+        android:text="@string/name_avata" />
 
     <TextView
         app:layout_constraintStart_toEndOf="@id/imgAvatar"
@@ -42,6 +42,6 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="@color/light_grey"
-        android:text="email@email.com" />
+        android:text="@string/Email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

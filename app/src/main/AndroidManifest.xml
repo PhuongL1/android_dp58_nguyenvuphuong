@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".day09_networking.MyApplication"
+        android:name=".day09_networking.MyApplicationDay9"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -19,7 +19,7 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".day09_networking.LoginActivity"
+            android:name=".day09_networking.LoginDay9Activity"
             android:exported="true">
 
             <intent-filter>
@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name=".day09_networking.MainActivity"
+            android:name=".day09_networking.MainDay9Activity"
             android:exported="false" />
 
         <activity

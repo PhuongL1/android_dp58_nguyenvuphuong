@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.LoginActivity;
+import com.devpro.android_dp58_nguyenvuphuong.day09_networking.LoginDay9Activity;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.RefreshRequest;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.TokenResponse;
 
@@ -95,7 +95,7 @@ public class TokenRepository {
         authManager.logout();
 
         new Handler(Looper.getMainLooper()).post(() -> {
-            Intent intent = new Intent(context, LoginActivity.class);
+            Intent intent = new Intent(context, LoginDay9Activity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             context.startActivity(intent);
         });

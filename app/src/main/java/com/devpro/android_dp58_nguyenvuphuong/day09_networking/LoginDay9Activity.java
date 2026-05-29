@@ -19,7 +19,7 @@ import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.Login
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiRepository;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginDay9Activity extends AppCompatActivity {
 
     EditText edtEmail;
     EditText edtPassword;
@@ -34,11 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         sharedPrefManager = SharedPrefManager.getInstance(this);
         if (sharedPrefManager.isLoggedIn()) {
             // Chuyển hướng tới Activity chính (Ví dụ ProductActivity)
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, MainDay9Activity.class));
             finish(); // Hủy LoginActivity tránh bấm nút back quay lại được
             return;
         }
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_day9);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
         apiRepository.login(request, new ApiCallback<LoginResponse>() {
             @Override
             public void onSuccess(LoginResponse response) {
-                Toast.makeText(LoginActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginDay9Activity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
                 // Phase 2: Ở đây chúng ta sẽ lưu token nhận được từ response
                 // lưu token nhận được từ response
                 // Lưu thông tin
@@ -82,13 +82,13 @@ public class LoginActivity extends AppCompatActivity {
                         response.getEmail()
                 );
                 // Chuyển màn hình
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                startActivity(new Intent(LoginDay9Activity.this, MainDay9Activity.class));
                 finish();
             }
 
             @Override
             public void onError(String error) {
-                Toast.makeText(LoginActivity.this, error, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginDay9Activity.this, error, Toast.LENGTH_SHORT).show();
             }
         });
 

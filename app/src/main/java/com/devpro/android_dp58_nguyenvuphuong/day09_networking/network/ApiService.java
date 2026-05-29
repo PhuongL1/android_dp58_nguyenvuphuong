@@ -2,6 +2,7 @@ package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
 
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginRequest;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.ProductListResponse;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.RefreshRequest;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.TokenResponse;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.UserListResponse;
@@ -19,4 +20,7 @@ public interface ApiService {
 
     @POST("refresh")
     Call<TokenResponse> refreshToken(@Body RefreshRequest refreshToken);
+    // them moi cho product
+    @GET("products")
+    Call<ProductListResponse> getProducts();
 }

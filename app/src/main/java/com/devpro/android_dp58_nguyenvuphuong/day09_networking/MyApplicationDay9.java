@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiClient;
 
-public class MyApplication extends Application {
+public class MyApplicationDay9 extends Application {
 
     @Override
     public void onCreate() {

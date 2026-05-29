@@ -2,7 +2,9 @@ package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
 
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginRequest;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.ProductListResponse;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.UserListResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.Product;
 import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.User;
 
 import java.util.List;
@@ -56,6 +58,32 @@ public class ApiRepository {
             @Override
             public void onFailure(Call<UserListResponse> call, Throwable t) {
                 callback.onError(t.getMessage());
+            }
+        });
+    }
+    // them moi cho product
+    public void getProducts(final ApiCallback<List<Product>> callback) {
+        Call<ProductListResponse> call = apiService.getProducts();
+
+        call.enqueue(new Callback<ProductListResponse>() {
+            @Override
+            public void onResponse(Call<ProductListResponse> call, Response<ProductListResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    List<Product> products = response.body().getProducts();
+
+                    if (products != null) {
+                        callback.onSuccess(products);
+                    } else {
+                        callback.onError("Không có danh sách sản phẩm");
+                    }
+                } else {
+                    callback.onError("Failed to get products: " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ProductListResponse> call, Throwable t) {
+                callback.onError("Lỗi kết nối mạng: " + t.getMessage());
             }
         });
     }
