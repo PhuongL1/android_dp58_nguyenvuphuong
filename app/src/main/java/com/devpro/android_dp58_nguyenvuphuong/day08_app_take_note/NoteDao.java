@@ -10,7 +10,7 @@ import androidx.room.Update;
 import java.util.List;
 
 @Dao
-public interface NoteDao {
+public interface NoteDao { //Data Access Object
 
     @Insert
     void insert(Note note);

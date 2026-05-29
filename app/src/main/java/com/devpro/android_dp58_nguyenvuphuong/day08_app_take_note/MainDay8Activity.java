@@ -58,7 +58,6 @@ public class MainDay8Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_day8);
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -355,7 +354,6 @@ public class MainDay8Activity extends AppCompatActivity {
             textView.setTextSize(11);
             textView.setGravity(android.view.Gravity.CENTER);
             textView.setPadding(24, 0, 24, 0);
-
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     dpToPx(26)
