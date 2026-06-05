@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "android_dp58_nguyenvuphuong"
 include(":app")
- 
+include(":kotlin-console")
