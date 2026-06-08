@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network;
 
 public interface ApiCallback<T> {
     void onSuccess(T result); // Thanh cong thi goi ham nay

@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.LoginDay9Activity;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.RefreshRequest;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.TokenResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.LoginDay9Activity;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.RefreshRequest;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.TokenResponse;
 
 import retrofit2.Call;
 import retrofit2.Response;

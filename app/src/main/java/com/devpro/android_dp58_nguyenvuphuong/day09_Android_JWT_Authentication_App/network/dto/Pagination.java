@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto;
 
 import com.google.gson.annotations.SerializedName;
 

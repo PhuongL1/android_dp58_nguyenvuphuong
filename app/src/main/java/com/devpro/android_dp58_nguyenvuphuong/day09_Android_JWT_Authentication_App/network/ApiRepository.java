@@ -1,11 +1,11 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network;
 
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginRequest;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.ProductListResponse;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.UserListResponse;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.Product;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.User;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.LoginRequest;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.LoginResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.ProductListResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.UserListResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.model.Product;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.model.User;
 
 import java.util.List;
 

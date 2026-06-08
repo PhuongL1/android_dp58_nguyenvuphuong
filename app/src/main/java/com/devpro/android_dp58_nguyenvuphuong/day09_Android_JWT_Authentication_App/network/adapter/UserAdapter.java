@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.adapter;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.devpro.android_dp58_nguyenvuphuong.R;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.User;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.model.User;
 
 import java.util.List;
 

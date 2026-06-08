@@ -1,9 +1,9 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.LoginResponse;
 
 public class AuthManager {
     private static final String PREF_NAME = "auth_pref";

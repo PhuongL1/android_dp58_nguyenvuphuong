@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,10 +15,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.devpro.android_dp58_nguyenvuphuong.R;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiCallback;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiRepository;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.adapter.ProductAdapter;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model.Product;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.ApiCallback;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.ApiRepository;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.adapter.ProductAdapter;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;

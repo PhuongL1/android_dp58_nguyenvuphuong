@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.devpro.android_dp58_nguyenvuphuong.R;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiCallback;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.SharedPrefManager;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginRequest;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.dto.LoginResponse;
-import com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.ApiRepository;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.ApiCallback;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.SharedPrefManager;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.LoginRequest;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.dto.LoginResponse;
+import com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.ApiRepository;
 
 public class LoginDay9Activity extends AppCompatActivity {
 

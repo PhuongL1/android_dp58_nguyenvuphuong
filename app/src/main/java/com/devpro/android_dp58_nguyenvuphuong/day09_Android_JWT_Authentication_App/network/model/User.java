@@ -1,4 +1,4 @@
-package com.devpro.android_dp58_nguyenvuphuong.day09_networking.network.model;
+package com.devpro.android_dp58_nguyenvuphuong.day09_Android_JWT_Authentication_App.network.model;
 
 import com.google.gson.annotations.SerializedName;
 

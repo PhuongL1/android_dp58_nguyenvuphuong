@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".day09_networking.MainDay9Activity">
+    tools:context=".day09_Android_JWT_Authentication_App.MainDay9Activity">
 
     <TextView
         android:id="@+id/tvTitleProducts"
