@@ -33,7 +33,6 @@ public abstract class NoteDatabase extends RoomDatabase {
                 }
             }
         }
-
         return INSTANCE;
     }
 }

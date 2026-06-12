@@ -20,6 +20,14 @@
 
         <activity
             android:name=".day09_Android_JWT_Authentication_App.LoginDay9Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".day09_Android_JWT_Authentication_App.MainDay9Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".day08_app_take_note.MainDay8Activity"
             android:exported="true">
 
             <intent-filter>
@@ -28,14 +36,6 @@
             </intent-filter>
 
         </activity>
-
-        <activity
-            android:name=".day09_Android_JWT_Authentication_App.MainDay9Activity"
-            android:exported="false" />
-
-        <activity
-            android:name=".day08_app_take_note.MainDay8Activity"
-            android:exported="false" />
 
         <activity
             android:name=".day08_app_take_note.NoteEditorActivity"
